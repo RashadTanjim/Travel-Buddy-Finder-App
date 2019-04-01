@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "758213787769",
+    "firebase_url": "https://travel-buddy-finder-app-d722c.firebaseio.com",
+    "project_id": "travel-buddy-finder-app-d722c",
+    "storage_bucket": "travel-buddy-finder-app-d722c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:758213787769:android:32611ff05b9f14f7",
+        "android_client_info": {
+          "package_name": "com.travelbuddy.travelbuddy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "758213787769-aqflicukk7qti2mh72rikqgdllo9e7e4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2i0y71QPDIcNVLxlVLZFztZzM_Mirxck"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
