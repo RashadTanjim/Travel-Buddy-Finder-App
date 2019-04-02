@@ -32,7 +32,7 @@ public class Account extends AppCompatActivity implements View.OnClickListener {
     ImageView home,search,insta,heart,profile;
 
     LinearLayout applinear,linearlinear,starlinear,prolinear;
-    ImageView app,linear,star,pro, gotoMap ;
+    ImageView app,linear,star,pro, gotoMassage ;
 
 
     public void backButton(View view)
@@ -56,11 +56,11 @@ public class Account extends AppCompatActivity implements View.OnClickListener {
         heartlinear = findViewById(R.id.heartlinear);
         profilelinear = findViewById(R.id.profilelinear);
 
-        home = findViewById(R.id.hometool);
-        search = findViewById(R.id.searchtool);
-        heart = findViewById(R.id.hearttool);
-        profile = findViewById(R.id.profiletool);
-        gotoMap = findViewById(R.id.map);
+        home = (ImageView)findViewById(R.id.hometool);
+        search =(ImageView) findViewById(R.id.searchtool);
+        heart = (ImageView)findViewById(R.id.hearttool);
+        profile = (ImageView)findViewById(R.id.profiletool);
+        gotoMassage = (ImageView)findViewById(R.id.nav_massage_web);
 
         applinear = findViewById(R.id.applinear);
         linearlinear = findViewById(R.id.linearlinear);
@@ -72,7 +72,7 @@ public class Account extends AppCompatActivity implements View.OnClickListener {
         star = findViewById(R.id.startool);
         pro = findViewById(R.id.protool);
 
-        gotoMap.setOnClickListener(new View.OnClickListener() {
+        gotoMassage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Account.this, Home_Map.class));

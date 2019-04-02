@@ -134,5 +134,9 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="rate_your_last_buddy_farhan_shafiq">Rate your last buddy Farhan Shafiq!</string>
+    <string name="group_travel_complete">Group Travel Complete</string>
+    <string name="skip_feedback">Skip feedback</string>
+    <string name="action_contract">Contact Us</string>
 
 </resources>

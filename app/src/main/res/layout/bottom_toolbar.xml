@@ -55,11 +55,11 @@
             android:gravity="center">
 
             <ImageView
-                android:id="@+id/map"
+                android:id="@+id/nav_massage_web"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:onClick="gotoMap"
-                android:src="@drawable/placeholder" />
+                android:src="@drawable/messenger_bubble_large_blue" />
 
         </LinearLayout>
 

@@ -14,9 +14,26 @@ public class Explore extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_web_view);
+        setContentView(R.layout.activity_explore);
 
 
+        // Get the Intent that started this activity and extract the string
+        Intent intent = getIntent();
+
+        String newsUrl = intent.getStringExtra("www.google.com");
+
+
+        WebView webview = findViewById(R.id.webView);
+        webview.loadUrl(newsUrl);
+        webview.setWebViewClient(new WebViewClient() {
+            //if app crash on before lolipop check this
+            @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
+                view.loadUrl(request.getUrl().toString());
+                return false;
+            }
+        });
 
     }
 }

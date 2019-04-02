@@ -42,11 +42,10 @@
 
         <!--PorterShapeImageView Library used-->
 
-        <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
+        <ImageView
             android:layout_width="match_parent"
             android:layout_height="400dp"
-            app:siShape="@drawable/rect"
-            app:siSquare="true"
+            android:src="@drawable/ic_launcher_background"
             android:layout_marginTop="10dp"
             android:id="@+id/postimage"/>
     <LinearLayout

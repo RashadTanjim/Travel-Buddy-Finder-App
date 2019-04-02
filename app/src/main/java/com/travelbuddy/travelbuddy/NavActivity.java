@@ -13,6 +13,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.webkit.WebView;
 import android.widget.Button;
 
 
@@ -120,7 +121,6 @@ public class NavActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-
         //group for Main Activities
 
         if (id == R.id.nav_timeline) {
@@ -128,14 +128,17 @@ public class NavActivity extends AppCompatActivity
             Intent intent = new Intent(NavActivity.this, Timeline.class);
             startActivity(intent);
 
-        } else if (id == R.id.nav_massage) {
-            Intent intent = new Intent(NavActivity.this, Explore.class);
-            startActivity(intent);
+        } else if (id == R.id.nav_massage) { //massage from web
+           // Intent intent = new Intent(NavActivity.this, Explore.class);
+           // startActivity(intent);
+            WebView webview = findViewById(R.id.webView1);
+            webview.loadUrl("www.amazon.com");
 
-        } else if (id == R.id.nav_stories) {
-            Intent intent = new Intent(NavActivity.this, Explore.class);
-            startActivity(intent);
-
+        } else if (id == R.id.nav_stories) { //post from web
+           // Intent intent = new Intent(NavActivity.this, Explore.class);
+            //startActivity(intent);
+            WebView webview = findViewById(R.id.webView1);
+            webview.loadUrl("www.airbnb.com");
 
         } else if (id == R.id.nav_explore) {
             Intent intent = new Intent(NavActivity.this, Home_Map.class);
@@ -170,7 +173,8 @@ public class NavActivity extends AppCompatActivity
 
 
         } else if (id == R.id.nav_about) {
-            //about this app
+            Intent intent = new Intent(NavActivity.this, About.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_feedback) {
             Intent intent = new Intent(NavActivity.this, Travel_complete_rating.class);

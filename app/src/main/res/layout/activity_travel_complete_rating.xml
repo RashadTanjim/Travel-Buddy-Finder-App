@@ -26,7 +26,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Ride Sharing Complete"
+                android:text="@string/group_travel_complete"
                 android:textColor="#323643"
                 android:textSize="21.1sp" />
 
@@ -35,7 +35,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="9.6dp"
-                android:text="Rate your last ride Sharing with Farhan Shafiq!"
+                android:text="@string/rate_your_last_buddy_farhan_shafiq"
                 android:textColor="#606470"
                 android:textSize="15.4sp" />
 
@@ -111,6 +111,7 @@
                 android:layout_height="wrap_content"
                 android:text="Submit Feedback"
                 android:textAllCaps="false"
+                android:id="@+id/FeedBack"
                 android:background="@drawable/rect_blue"
                 android:textColor="#fbfbfb"
                 android:textSize="15.4sp"/>
@@ -130,7 +131,8 @@
     <customfonts.MyTextView_Roboto_Regular
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Skip feedback"
+        android:id="@+id/skip"
+        android:text="@string/skip_feedback"
         android:textColor="#606470"
         android:textSize="15.4sp"/>
 

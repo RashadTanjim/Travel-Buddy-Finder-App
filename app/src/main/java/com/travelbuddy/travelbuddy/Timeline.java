@@ -18,6 +18,7 @@ import android.util.Log;
 import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
@@ -54,7 +55,7 @@ public class Timeline extends AppCompatActivity implements View.OnClickListener{
     private StoriesAdapter storiesAdapter;
 
     LinearLayout homelinear,searchlinear,instalinear,heartlinear,profilelinear;
-    ImageView home,search,insta,heart,profile, gotoMap;
+    ImageView home,search,insta,heart,profile, gotoMassage;
 
 
 
@@ -69,14 +70,14 @@ public class Timeline extends AppCompatActivity implements View.OnClickListener{
         heartlinear = findViewById(R.id.heartlinear);
         profilelinear = findViewById(R.id.profilelinear);
 
-        navBar = findViewById(R.id.Navbar);
+        navBar =(ImageView) findViewById(R.id.Navbar);
 
-        home = findViewById(R.id.hometool);
-        search = findViewById(R.id.searchtool);
+        home = (ImageView) findViewById(R.id.hometool);
+        search =(ImageView) findViewById(R.id.searchtool);
        // insta = findViewById(R.id.map);
-        heart = findViewById(R.id.hearttool);
-        profile = findViewById(R.id.profiletool);
-        gotoMap = findViewById(R.id.map);
+        heart = (ImageView)findViewById(R.id.hearttool);
+        profile =(ImageView) findViewById(R.id.profiletool);
+        gotoMassage =(ImageView) findViewById(R.id.nav_massage_web);
 
 
         profile.setOnClickListener(new View.OnClickListener() {
@@ -87,11 +88,13 @@ public class Timeline extends AppCompatActivity implements View.OnClickListener{
             }
         });
 
-        gotoMap.setOnClickListener(new View.OnClickListener() {
+        gotoMassage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Timeline.this, Home_Map.class));
-                finish();
+                //startActivity(new Intent(Timeline.this, Home_Map.class));
+                //finish();
+                WebView webview = findViewById(R.id.webView);
+                webview.loadUrl("www.facebook.com");
             }
         });
 

@@ -15,7 +15,8 @@
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Explore"></activity>
+        <activity android:name=".About"></activity>
+        <activity android:name=".Explore" />
         <activity android:name=".MainActivity" />
         <activity
             android:name=".NavActivity"
@@ -60,7 +61,7 @@
             android:label="@string/title_activity_reset_password"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Account" />
-        <activity android:name=".MassageActivity"/>
+        <activity android:name=".MassageActivity" />
     </application>
 
 </manifest>
