@@ -68,8 +68,8 @@ public class NavActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Snackbar.make(view, "mailto:travelbuddy.info@gmail.com", Snackbar.LENGTH_LONG)
+                        .setAction("Mail", null).show();
             }
         });
 
@@ -194,7 +194,7 @@ public class NavActivity extends AppCompatActivity
     public void loadRecyclerViewData(){
 
         final ProgressDialog progressDialog = new ProgressDialog(this);
-        progressDialog.setMessage("Loading Data...");
+        progressDialog.setMessage("Loading Data From Server...");
         progressDialog.show();
 
         StringRequest stringRequest = new StringRequest(Request.Method.GET,

@@ -43,27 +43,7 @@
                 android:layout_height="wrap_content"
                 android:text="Description" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="10dp"
-                android:orientation="horizontal">
 
-
-                <customfonts.MyTextView_Roboto_Regular
-                    android:id="@+id/post_share"
-                    android:layout_width="121dp"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="4dp"
-                    android:background="@drawable/rect_blue"
-                    android:gravity="center"
-                    android:text="Share"
-                    android:textAllCaps="false"
-                    android:textColor="#fbfbfb"
-                    android:textSize="15.4sp" />
-            </LinearLayout>
         </LinearLayout>
 
 
