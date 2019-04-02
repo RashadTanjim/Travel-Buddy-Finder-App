@@ -53,7 +53,7 @@ public class NavActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        postShare = (Button) findViewById(R.id.post_share);
+       // postShare = (Button) findViewById(R.id.post_share);
 
 
         recyclerView = findViewById(R.id.recycler_view);
