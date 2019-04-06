@@ -4,12 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/cardview_shadow_start_color"
     tools:context=".About">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#1bbc9b"
+        android:background="#70079b"
         android:padding="45px">
 
         <ImageView
@@ -19,7 +20,7 @@
             android:layout_centerVertical="true"
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"
-            android:src="@drawable/farhan_3" />
+            android:src="@drawable/icon" />
 
     </RelativeLayout>
 
@@ -27,7 +28,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100px"
-        android:background="#1bbc9b"
+        android:background="#70079b"
         android:gravity="center_horizontal"
         android:orientation="horizontal">
 
@@ -35,7 +36,7 @@
             android:id="@+id/github"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/farhan"
+            android:src="@drawable/ic_plusone_standard_off_client"
 
             />
 
@@ -45,7 +46,7 @@
             android:layout_height="wrap_content"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
-            android:src="@drawable/farhan"
+            android:src="@drawable/person"
 
             />
 
@@ -57,11 +58,11 @@
 
     </LinearLayout>
 
-    <TextView
+    <customfonts.TextViewSFProDisplayRegular
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:text="About : "
+        android:text="@string/about_details"
         android:textColor="#000" />
 
     <TextView

@@ -27,7 +27,7 @@ import hani.momanii.supernova_emoji_library.Helper.EmojiconEditText;
 
 public class MassageActivity extends AppCompatActivity {
 
-   // private static int SIGN_IN_REQUEST_CODE = 1;
+    private static int SIGN_IN_REQUEST_CODE = 1;
     private FirebaseListAdapter<ChatMessage> adapter;
     RelativeLayout activity_main;
 
@@ -38,7 +38,7 @@ public class MassageActivity extends AppCompatActivity {
 
 
     @Override
-   /* public boolean onOptionsItemSelected(MenuItem item) {
+    public boolean onOptionsItemSelected(MenuItem item) {
         if(item.getItemId() == R.id.menu_sign_out)
         {
             AuthUI.getInstance().signOut(this).addOnCompleteListener(new OnCompleteListener<Void>() {
@@ -50,7 +50,7 @@ public class MassageActivity extends AppCompatActivity {
             });
         }
         return true;
-    }*/
+    }
 
 
 
@@ -81,7 +81,7 @@ public class MassageActivity extends AppCompatActivity {
         });
 
         //Check if not sign-in then navigate Signin page
-      /*  if(FirebaseAuth.getInstance().getCurrentUser() == null)
+       if(FirebaseAuth.getInstance().getCurrentUser() == null)
         {
             startActivityForResult(AuthUI.getInstance().createSignInIntentBuilder().build(),SIGN_IN_REQUEST_CODE);
         }
@@ -90,7 +90,7 @@ public class MassageActivity extends AppCompatActivity {
             Snackbar.make(activity_main,"Welcome "+FirebaseAuth.getInstance().getCurrentUser().getEmail(),Snackbar.LENGTH_SHORT).show();
             //Load content
             displayChatMessage();
-        }*/
+        }
 
 
     }

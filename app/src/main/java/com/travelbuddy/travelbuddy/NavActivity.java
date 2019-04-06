@@ -42,7 +42,7 @@ public class NavActivity extends AppCompatActivity
     private RecyclerView recyclerView;
     private List<ListItem> listItems;
     private MyAdapter myAdapter;
-    private static final String REQUEST_URL = "https://newsapi.org/v2/top-headlines?country=in&apiKey=3d5998d023614120acefd255e7017c2a";
+    private static final String REQUEST_URL = "http://travel-buddy-finder.com/arnob.json";
     private Button postExp, postShare;
 
 
@@ -132,13 +132,13 @@ public class NavActivity extends AppCompatActivity
            // Intent intent = new Intent(NavActivity.this, Explore.class);
            // startActivity(intent);
             WebView webview = findViewById(R.id.webView1);
-            webview.loadUrl("www.amazon.com");
+            webview.loadUrl("http://travel-buddy-finder.com/groups");
 
         } else if (id == R.id.nav_stories) { //post from web
            // Intent intent = new Intent(NavActivity.this, Explore.class);
             //startActivity(intent);
             WebView webview = findViewById(R.id.webView1);
-            webview.loadUrl("www.airbnb.com");
+            webview.loadUrl("http://travel-buddy-finder.com/gallery-2");
 
         } else if (id == R.id.nav_explore) {
             Intent intent = new Intent(NavActivity.this, Home_Map.class);

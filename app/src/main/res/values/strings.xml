@@ -138,5 +138,11 @@
     <string name="group_travel_complete">Group Travel Complete</string>
     <string name="skip_feedback">Skip feedback</string>
     <string name="action_contract">Contact Us</string>
+    <string name="about_details">About : (http://travel-buddy-finder.com)
+        Travel Buddy Finder specializes in exclusive travel services for independent travelers,
+
+        families as well corporate groups. We believe in providing the best level of service throughout the world by providing you with our knowledge and expertise to assist you in planning your trip as well as being there for you throughout your journey.
+
+        Our extensive tour plans have been researched and developed by experienced travel professionals and travel partners. We also offer customized and tailor-made tours and are equipped with a network of fully trained and experienced staff overseas.</string>
 
 </resources>

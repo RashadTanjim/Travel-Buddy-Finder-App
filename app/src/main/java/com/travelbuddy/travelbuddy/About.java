@@ -26,10 +26,8 @@ public class About extends AppCompatActivity {
         github.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               /* Intent myIntent = new Intent(v.getContext(), newsExplore.class);
-                myIntent.putExtra("newsUrl", "https://github.com/Abhi5h3k");
-                v.getContext().startActivity(myIntent);*/
-                String url = "https://github.com/Abhi5h3k";
+
+                String url = "http://travel-buddy-finder.com/about-me/";
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(Uri.parse(url));
                 startActivity(i);
@@ -38,10 +36,8 @@ public class About extends AppCompatActivity {
         linkedin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               /* Intent myIntent = new Intent(v.getContext(), newsExplore.class);
-                myIntent.putExtra("newsUrl", "https://www.linkedin.com/in/abhishek-bhardwaj-b16764166");
-                v.getContext().startActivity(myIntent);*/
-                String url = "https://www.linkedin.com/in/abhishek-bhardwaj-b16764166";
+
+                String url = "https://www.linkedin.com";
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(Uri.parse(url));
                 startActivity(i);
@@ -51,10 +47,8 @@ public class About extends AppCompatActivity {
         stackoverflow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-             /*   Intent myIntent = new Intent(v.getContext(), newsExplore.class);
-                myIntent.putExtra("newsUrl", "https://stackoverflow.com/users/6870223/abhi?tab=profile");
-                v.getContext().startActivity(myIntent);*/
-                String url = "https://stackoverflow.com/users/6870223/abhi?tab=profile";
+
+                String url = "http://travel-buddy-finder.com";
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(Uri.parse(url));
                 startActivity(i);
