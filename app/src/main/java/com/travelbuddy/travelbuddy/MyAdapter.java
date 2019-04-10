@@ -1,7 +1,5 @@
 package com.travelbuddy.travelbuddy;
 
-import android.app.PendingIntent;
-import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -49,6 +47,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
                 .load(listItem.getmImageURL())
                 .placeholder(R.drawable.user_placeholder)
                 .into(holder.Image);
+
 
         holder.Layout.setOnClickListener(new View.OnClickListener() {
             @Override

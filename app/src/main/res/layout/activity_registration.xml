@@ -5,16 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/backgroundpic"
+    android:orientation="vertical"
     android:fitsSystemWindows="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="center_vertical"
+        android:layout_gravity="center"
         android:layout_marginLeft="22dp"
-        android:layout_marginTop="155dp"
         android:layout_marginRight="25dp"
-        android:layout_marginBottom="0dp"
         android:orientation="vertical">
 
 

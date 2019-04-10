@@ -51,7 +51,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.MyViewHolder>{
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        PorterShapeImageView post;
+        ImageView post;
         CircleImageView profile;
         TextView name,like,caption,captionname;
         public MyViewHolder(View itemView) {

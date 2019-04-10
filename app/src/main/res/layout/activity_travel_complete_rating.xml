@@ -100,7 +100,7 @@
                     android:layout_height="wrap_content" />
             </LinearLayout>
 
-            <customfonts.MyTextView_Roboto_Regular
+            <Button
                 android:layout_alignParentBottom="true"
                 android:layout_gravity="center"
                 android:gravity="center"

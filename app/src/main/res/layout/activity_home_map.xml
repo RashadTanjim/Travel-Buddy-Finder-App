@@ -52,15 +52,15 @@
                 android:src="@drawable/pin_black"/>
 
             <customfonts.EditText__SF_Pro_Display_Regular
-                android:layout_marginTop="15dp"
-                android:layout_marginLeft="18dp"
-                android:background="#00000000"
-                android:textColorHint="#000000"
-                android:inputType="text"
-                android:textSize="13.4sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="Enter Location"/>
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="15dp"
+                android:background="#00000000"
+                android:hint="Enter Location"
+                android:inputType="text"
+                android:textColorHint="#000000"
+                android:textSize="13.4sp" />
 
         </LinearLayout>
 

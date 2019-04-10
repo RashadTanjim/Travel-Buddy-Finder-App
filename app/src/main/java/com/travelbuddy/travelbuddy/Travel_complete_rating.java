@@ -27,7 +27,7 @@ public class Travel_complete_rating extends AppCompatActivity {
             }
         });
 
-        feedBack = (Button) findViewById(R.id.FeedBack);
+        feedBack = findViewById(R.id.FeedBack);
         feedBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
