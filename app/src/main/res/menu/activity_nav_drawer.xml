@@ -14,11 +14,11 @@
             android:title="Massage" />
         <item
             android:id="@+id/nav_stories"
-            android:icon="@drawable/bell"
-            android:title="Stories" />
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Gallary" />
         <item
             android:id="@+id/nav_explore"
-            android:icon="@drawable/placeholder"
+            android:icon="@drawable/explore_travel"
             android:title="Explore" />
         <item
             android:id="@+id/nav_settings"
@@ -26,7 +26,7 @@
             android:title="Settings" />
         <item
             android:id="@+id/nav_book"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/bell"
             android:title="Travel Booking" />
         <item
             android:id="@+id/nav_history"

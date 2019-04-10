@@ -1,10 +1,12 @@
 package com.travelbuddy.travelbuddy;
 
+import android.content.Intent;
 import android.graphics.Point;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.ahmadrosid.lib.drawroutemap.DrawMarker;
 import com.ahmadrosid.lib.drawroutemap.DrawRouteMaps;
@@ -18,9 +20,13 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import customfonts.Button_SF_Pro_Display_Medium;
+
 public class Book extends AppCompatActivity implements OnMapReadyCallback ,View.OnClickListener{
 
     ImageView car1,car2,car3,car4,car5;
+    private ImageView NavBar, Stories_nav;
+    private Button_SF_Pro_Display_Medium SharingConfirmed;
 
     private double radius = 2000;
 
@@ -51,7 +57,30 @@ public class Book extends AppCompatActivity implements OnMapReadyCallback ,View.
 //        car5.setOnClickListener(this);
 
 
+        NavBar = (ImageView) findViewById(R.id.Navbar);
+        NavBar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Book.this, NavActivity.class));
+            }
+        });
 
+        Stories_nav = (ImageView) findViewById(R.id.stories_nav);
+        Stories_nav.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Book.this, InstaFeed.class));
+            }
+        });
+
+        SharingConfirmed = (Button_SF_Pro_Display_Medium) findViewById(R.id.sharing_confirm);
+        SharingConfirmed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //startActivity(new Intent(Book.this, InstaFeed.class));
+                Toast.makeText(Book.this, "Congrats! Booking Confirmed.", Toast.LENGTH_LONG).show();
+            }
+        });
 
 
         MapFragment mapFragment = (MapFragment) getFragmentManager()

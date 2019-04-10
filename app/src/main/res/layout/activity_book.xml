@@ -95,7 +95,7 @@
                                 android:layout_marginLeft="14.3dp"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Home"
+                                android:text="Home To Travel Location!"
                                 android:textSize="13.4sp"
                                 android:textColor="#323643"/>
 
@@ -105,7 +105,7 @@
                                 android:layout_marginLeft="14.3dp"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="4 people"
+                                android:text="5 people"
                                 android:textSize="13.4sp"
                                 android:textColor="#323643"/>
                         </LinearLayout>
@@ -216,7 +216,7 @@
                     android:id="@+id/car2"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
-                    android:src="@drawable/farhan"
+                    android:src="@drawable/farhan_1"
                     android:layout_marginLeft="22dp"
                     android:layout_marginTop="4dp"
                     />
@@ -254,7 +254,7 @@
                     android:id="@+id/car3"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
-                    android:src="@drawable/farhan"
+                    android:src="@drawable/user_avater"
                     android:layout_marginTop="4dp" />
 
 
@@ -290,7 +290,7 @@
                     android:id="@+id/car4"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
-                    android:src="@drawable/farhan"
+                    android:src="@drawable/user_avater"
                     android:layout_marginTop="4dp" />
 
 
@@ -327,6 +327,7 @@
                 android:layout_marginLeft="19.3dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginRight="18.1dp"
+                android:id="@+id/sharing_confirm"
                 android:background="@drawable/rect_blue"
                 android:text="Confirm Sharing"
                 android:textAllCaps="false"

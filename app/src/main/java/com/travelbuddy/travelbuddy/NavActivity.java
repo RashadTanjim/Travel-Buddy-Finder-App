@@ -46,7 +46,7 @@ public class NavActivity extends AppCompatActivity
     private RecyclerView recyclerView;
     private List<ListItem> listItems;
     private MyAdapter myAdapter;
-    private static final String REQUEST_URL = "http://travel-buddy-finder.com/arnob.json";
+    private static final String REQUEST_URL = "http://travel-buddy-finder.com/data.json";
     private Button postExp, postShare;
     RequestQueue requestQueue;
 
@@ -117,7 +117,9 @@ public class NavActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            //Intent intent = new Intent(NavActivity.this, Timeline.class);
+            //startActivity(intent);
+            Toast.makeText(NavActivity.this, "Welcome To Travel Buddy App!", Toast.LENGTH_SHORT).show();
         }
 
         return super.onOptionsItemSelected(item);
@@ -133,7 +135,7 @@ public class NavActivity extends AppCompatActivity
 
         if (id == R.id.nav_timeline) {
             // Handle the timeline action
-            Intent intent = new Intent(NavActivity.this, Timeline.class);
+            Intent intent = new Intent(NavActivity.this, InstaFeed.class);
             startActivity(intent);
 
         } else if (id == R.id.nav_massage) { //massage from web

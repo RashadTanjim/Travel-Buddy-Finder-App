@@ -1,10 +1,14 @@
 package com.travelbuddy.travelbuddy;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
 
 import java.util.ArrayList;
 
@@ -16,6 +20,7 @@ public class Travel_History extends AppCompatActivity {
     private RidehistoryAdapter ridehistoryAdapter;
     private RecyclerView recyclerview;
     private ArrayList<RidehistoryModel> ridehistoryModelArrayList;
+    private ImageView traveShareing;
 
     Integer i1[]={R.drawable.pin_black,R.drawable.pin_black,R.drawable.pin_black,R.drawable.pin_black,R.drawable.pin_black};
     Integer i2[]={R.drawable.rect_dotted,R.drawable.rect_dotted,R.drawable.rect_dotted,R.drawable.rect_dotted,R.drawable.rect_dotted};
@@ -30,6 +35,15 @@ public class Travel_History extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_travel__history);
+
+        traveShareing = (ImageView) findViewById(R.id.travel_sharing_back);
+
+        traveShareing.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Travel_History.this, NavActivity.class));
+            }
+        });
 
         recyclerview=findViewById(R.id.recycler1);
         RecyclerView.LayoutManager layoutManager=new LinearLayoutManager(Travel_History.this);
@@ -47,6 +61,7 @@ public class Travel_History extends AppCompatActivity {
         }
         ridehistoryAdapter = new RidehistoryAdapter(Travel_History.this,ridehistoryModelArrayList);
         recyclerview.setAdapter(ridehistoryAdapter);
+
 
 
 
